@@ -2,7 +2,9 @@ package com.vkr.config;
 
 
 import com.vkr.config.converters.StringToBrowserTypeConverter;
+import com.vkr.config.enums.BrowserRemoteModeType;
 import com.vkr.config.enums.BrowserType;
+import com.vkr.config.enums.BrowserRunModeType;
 import org.aeonbits.owner.Config;
 
 @Config.LoadPolicy(Config.LoadType.MERGE)
@@ -16,4 +18,9 @@ public interface FrameworkConfig extends Config {
     @ConverterClass(StringToBrowserTypeConverter.class)
     BrowserType browser();
 
+    @Key("browserRunMode")
+    BrowserRunModeType browserRunMode();
+
+    @Key("browserRemoteMode")
+    BrowserRemoteModeType browserRemoteMode();
 }
