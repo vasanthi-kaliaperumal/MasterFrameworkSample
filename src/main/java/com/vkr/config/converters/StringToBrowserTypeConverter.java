@@ -1,6 +1,6 @@
 package com.vkr.config.converters;
 
-import com.vkr.config.enums.BrowserType;
+import com.vkr.enums.BrowserType;
 import org.aeonbits.owner.Converter;
 
 import java.lang.reflect.Method;

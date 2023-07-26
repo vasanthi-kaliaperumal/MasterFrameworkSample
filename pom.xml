@@ -16,9 +16,27 @@
         <testNGVersion>7.8.0</testNGVersion>
         <cucumberVersion>7.11.2</cucumberVersion>
         <aenobitsVersion>1.0.9</aenobitsVersion>
+        <webdriverManager>5.2.3</webdriverManager>
+        <lombokVersion>1.18.26</lombokVersion>
+        <appiumVersion>8.3.0</appiumVersion>
+        <junitJupiterVersion>5.9.2</junitJupiterVersion>
+        <fixtureFactoryVersion>3.1.0</fixtureFactoryVersion>
+        <assertjCoreVersion>3.21.0</assertjCoreVersion>
     </properties>
 
     <dependencies>
+
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>${assertjCoreVersion}</version>
+        </dependency>
+        <dependency>
+            <groupId>br.com.six2six</groupId>
+            <artifactId>fixture-factory</artifactId>
+            <version>${fixtureFactoryVersion}</version>
+        </dependency>
+
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
@@ -44,12 +62,31 @@
             <artifactId>owner</artifactId>
             <version>${aenobitsVersion}</version>
         </dependency>
+
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>5.2.3</version>
+            <version>${webdriverManager}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombokVersion}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.appium</groupId>
+            <artifactId>java-client</artifactId>
+            <version>${appiumVersion}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${junitJupiterVersion}</version>
+        </dependency>
     </dependencies>
 
 
